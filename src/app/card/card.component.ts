@@ -22,4 +22,8 @@ export class CardComponent implements OnInit {
     this.products.push('Gustavo');
   }
 
+  removeProduct(i: number) {
+    this.products.splice(i, 1);
+  }
+
 }

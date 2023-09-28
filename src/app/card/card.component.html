@@ -2,8 +2,10 @@
 <p>card works!</p>
 <button>Hello World</button>
 <ul>
-    <li *ngFor="let product of products">
-        {{ product }}
+    <li *ngFor="let product of products; let i = index"
+        (click)="removeProduct(i)"    
+    >
+        {{ i }} - {{ product }}
     </li>
     <button (click)="addProduct()">Add</button>
 </ul>
