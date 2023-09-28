@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   products: string[] = [];
+  menuType: string = 'not valid type';
 
   constructor() {
     this.products = [

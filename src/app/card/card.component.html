@@ -9,3 +9,27 @@
     </li>
     <button (click)="addProduct()">Add</button>
 </ul>
+
+<div [ngSwitch]="menuType">
+    <div *ngSwitchDefault>
+        <ul>
+            <li>edit profile</li>
+            <li>add card</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'admin'">
+        <ul>
+            <li>edit profile</li>
+            <li>add card</li>
+            <li>manage users</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'superuser'">
+        <ul>
+            <li>edit profile</li>
+            <li>add card</li>
+            <li>manage users</li>
+            <li>manage admins</li>
+        </ul>
+    </div>
+</div>
