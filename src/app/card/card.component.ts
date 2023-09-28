@@ -18,4 +18,8 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addProduct() {
+    this.products.push('Gustavo');
+  }
+
 }
