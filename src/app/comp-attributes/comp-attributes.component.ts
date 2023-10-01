@@ -10,6 +10,9 @@ export class CompAttributesComponent implements OnInit {
   style: 'enable' | 'disable' = 'enable';
   backgroundColor: string = 'blue';
   textColor: string = 'white';
+  item: string = '';
+  itemList: string[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -20,6 +23,10 @@ export class CompAttributesComponent implements OnInit {
       this.style = 'disable';
     else
       this.style = 'enable';
+  }
+
+  addItem() {
+    this.itemList.push(this.item);
   }
 
 }
