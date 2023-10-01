@@ -10,3 +10,9 @@
     <li *ngFor="let element of itemList">{{ element }}</li>
 </ul>
 <hr>
+<ng-template [ngIf]="itemList.length === 1">
+    <a href="#">BUY</a>
+</ng-template>
+<ng-template [ngIf]="itemList.length > 1">
+    <a href="#">BUY ALL ITEMS</a>
+</ng-template>
