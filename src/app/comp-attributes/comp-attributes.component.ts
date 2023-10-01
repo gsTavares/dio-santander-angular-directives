@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CompAttributesComponent implements OnInit {
 
   style: 'enable' | 'disable' = 'enable';
-
+  backgroundColor: string = 'blue';
+  textColor: string = 'white';
   constructor() { }
 
   ngOnInit(): void {
