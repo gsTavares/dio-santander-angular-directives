@@ -1,6 +1,7 @@
 <p [ngClass]="style">comp-attributes works!</p>
 <button (click)="changeStyle()">Change style</button>
 <h1 [ngStyle]="{'background': backgroundColor, 'color': textColor}">ANGULAR COURSE</h1>
+<ng-content select="h2"></ng-content>
 <h1>Shopping list</h1>
 <p>Add item</p>
 <input type="text" [(ngModel)]="item">
@@ -16,3 +17,4 @@
 <ng-template [ngIf]="itemList.length > 1">
     <a href="#">BUY ALL ITEMS</a>
 </ng-template>
+<ng-content select="p"></ng-content>
